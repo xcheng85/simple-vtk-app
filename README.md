@@ -1,5 +1,14 @@
 # simple-vtk-app
 
+## intellisense for vtk
+https://learn.microsoft.com/en-us/shows/one-dev-minute/configure-c-intellisense-in-visual-studio-code
+
+c/c++ configurations (JSON)
+
+add this include path:
+    "/home/xiao/vtk/**"
+
+
 ## Run VTK with nvidia container toolkit
 
 ```shell
@@ -152,5 +161,5 @@ lscpu | egrep 'Model name|Socket|Thread|NUMA|CPU\(s\)'
 
 make -j 16
 
-./SimpleVtkApp
+./SimpleVtkApp /home/xiao/vtk/source/ThirdParty/vtkm/vtkvtkm/vtk-m/data/data/uniform/venn250.vtk
 ```
